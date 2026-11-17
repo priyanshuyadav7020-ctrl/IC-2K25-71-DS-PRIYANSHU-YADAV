@@ -1,5 +1,6 @@
+#include <iostream>
+using namespace std;
 
-#include <stdio.h>
 #define MAX 5
 
 int stack[MAX];
@@ -10,22 +11,22 @@ void push() {
     int value;
 
     if (top == MAX - 1) {
-        printf("Stack Overflow\n");
+        cout << "Stack Overflow" << endl;
     } else {
-        printf("Enter value: ");
-        scanf("%d", &value);
+        cout << "Enter value: ";
+        cin >> value;
         top++;
         stack[top] = value;
-        printf("Element inserted\n");
+        cout << "Element inserted" << endl;
     }
 }
 
 // Delete element
 void pop() {
     if (top == -1) {
-        printf("Stack Underflow\n");
+        cout << "Stack Underflow" << endl;
     } else {
-        printf("Deleted element: %d\n", stack[top]);
+        cout << "Deleted element: " << stack[top] << endl;
         top--;
     }
 }
@@ -33,43 +34,66 @@ void pop() {
 // Display top element
 void peek() {
     if (top == -1) {
-        printf("Stack is Empty\n");
+        cout << "Stack is Empty" << endl;
     } else {
-        printf("Top element: %d\n", stack[top]);
+        cout << "Top element: " << stack[top] << endl;
     }
 }
 
 // Display stack
 void display() {
-    int i;
-
     if (top == -1) {
-        printf("Stack is Empty\n");
+        cout << "Stack is Empty" << endl;
     } else {
-        printf("Stack elements:\n");
-        for (i = top; i >= 0; i--) {
-            printf("%d\n", stack[i]);
+        cout << "Stack elements:" << endl;
+
+        for (int i = top; i >= 0; i--) {
+            cout << stack[i] << endl;
         }
     }
 }
 
+// Main function
 int main() {
     int choice;
 
     do {
-        printf("\n1. Push\n2. Pop\n3. Peek\n4. Display\n5. Exit\n");
-        printf("Enter choice: ");
-        scanf("%d", &choice);
+        cout << "\n1. Push" << endl;
+        cout << "2. Pop" << endl;
+        cout << "3. Peek" << endl;
+        cout << "4. Display" << endl;
+        cout << "5. Exit" << endl;
+
+        cout << "Enter choice: ";
+        cin >> choice;
 
         switch (choice) {
-            case 1: push(); break;
-            case 2: pop(); break;
-            case 3: peek(); break;
-            case 4: display(); break;
-            case 5: printf("Exit\n"); break;
-            default: printf("Invalid choice\n");
+            case 1:
+                push();
+                break;
+
+            case 2:
+                pop();
+                break;
+
+            case 3:
+                peek();
+                break;
+
+            case 4:
+                display();
+                break;
+
+            case 5:
+                cout << "Exit" << endl;
+                break;
+
+            default:
+                cout << "Invalid choice" << endl;
         }
+
     } while (choice != 5);
 
     return 0;
 }
+
