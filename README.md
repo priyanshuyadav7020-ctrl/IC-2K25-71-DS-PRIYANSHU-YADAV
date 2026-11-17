@@ -29,7 +29,7 @@ The program provides the following operations:
 ##  Maximum Size
 The maximum capacity of the stack is **5 elements**, defined using:
 ## Conclusion
-This project demonstrates the implementation of a Stack using an Array in C. It helps understand basic stack operations, the LIFO principle, and the handling of overflow and underflow conditions.
+This project demonstrates the implementation of a Stack using an Array in C++. It helps understand basic stack operations, the LIFO principle, and the handling of overflow and underflow conditions.
 
 ---
 
