@@ -5,7 +5,7 @@ ROLL NUMBER:- IC-2K25-71
 Lab-1:-# Stack Implementation Using Array in C++
 
 ## 1. Introduction
-This project implements a Stack data structure using an array in the C programming language. A stack follows the **LIFO (Last In, First Out)** principle, which means the element inserted last is removed first.
+This project implements a Stack data structure using an array in the C++ programming language. A stack follows the **LIFO (Last In, First Out)** principle, which means the element inserted last is removed first.
 
 ## 2. Features
 The program provides the following operations:
@@ -21,8 +21,8 @@ The program provides the following operations:
 - **Stack Underflow:** Occurs when an element is deleted from an empty stack.
 
 ## 4. Technologies Used
-- Programming Language: C
-- Header File: `stdio.h`
+- Programming Language: C++
+- Header File: `iostream`
 - Data Structure: Array
 - Compiler: GCC / Turbo C / VS Code
 
