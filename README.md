@@ -2,7 +2,7 @@
 NAME:-  PRIYANSHU YADAV
 ROLL NUMBER:- IC-2K25-71
 
-Lab-1:-# Stack Implementation Using Array in C
+Lab-1:-# Stack Implementation Using Array in C++
 
 ## 1. Introduction
 This project implements a Stack data structure using an array in the C programming language. A stack follows the **LIFO (Last In, First Out)** principle, which means the element inserted last is removed first.
